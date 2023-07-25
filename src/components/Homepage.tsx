@@ -10,7 +10,7 @@ function Homepage() {
             <button className="topCalculas text">AC</button>
           </div>
           <div className="flex justify-center items-center">
-            <button className="topCalculas text">+/-</button>
+            <button className="topCalculas text">-/+</button>
           </div>
           <div className="flex justify-center items-center">
             <button className="topCalculas text">%</button>
