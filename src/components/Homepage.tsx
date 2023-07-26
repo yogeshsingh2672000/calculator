@@ -17,6 +17,7 @@ function Homepage() {
   const [isEqual, setIsEqual] = useState<boolean>(false);
 
   const handleInput = (e: any, flag: string) => {
+    setIsEqual(false);
     const { textContent } = e.currentTarget;
     if (flag === "op") {
       if (operator != "") {
@@ -32,10 +33,15 @@ function Homepage() {
     } else if (flag === "num") {
       setCurrent(current + textContent);
     }
-    setUserDisplay(userDisplay + textContent);
+    if (flag === "op" && userDisplay[userDisplay.length - 1] === textContent) {
+      setUserDisplay(userDisplay);
+    } else {
+      setUserDisplay(userDisplay + textContent);
+    }
   };
 
   const handleErase = () => {
+    setIsEqual(false);
     setResult("");
     setCurrent("");
     setOperator("");
