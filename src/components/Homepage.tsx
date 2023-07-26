@@ -84,7 +84,7 @@ function Homepage() {
       <div className="h-[150px] bg-[#ffffff0d] my-4 rounded-[40px] px-[50px] md:px-[90px] flex justify-end items-center">
         <div className="flex flex-col gap-[20px]">
           {isEqual ? (
-            <div className="text-4xl">{result}</div>
+            <div className="text-2xl">{result}</div>
           ) : (
             <>
               <div>{userDisplay}</div>
