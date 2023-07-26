@@ -75,7 +75,7 @@ function Homepage() {
 
   return (
     <main className="w-full h-screen flex flex-col justify-between p-2">
-      <div className="h-full bg-[#ffffff0d] my-4 rounded-[40px] px-[50px] md:px-[90px] flex justify-end items-center">
+      <div className="h-[150px] bg-[#ffffff0d] my-4 rounded-[40px] px-[50px] md:px-[90px] flex justify-end items-center">
         <div className="flex flex-col gap-[20px]">
           {isEqual ? (
             <div className="text-4xl">{result}</div>
